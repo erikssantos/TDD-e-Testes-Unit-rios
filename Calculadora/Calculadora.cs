@@ -5,38 +5,40 @@ namespace Calculadoras
 {
     public class Calculadora
     {
+        private string data;
         private List<string> listaHistorico;
 
-        public Calculadora()
+        public Calculadora(string data)
         {
             listaHistorico = new List<string>();
+            this.data = data;
         }
         
         public int Somar(int val1, int val2)
         {
             int resultado = val1 + val2;
-            listaHistorico.Insert(0, "Resultado: " + resultado);
+            listaHistorico.Insert(0, "Resultado: " + resultado + " - data: " + data);
             return resultado;
         }
 
         public int Subtrair(int val1, int val2)
         {
             int resultado = val1 - val2;
-            listaHistorico.Insert(0, "Resultado: " + resultado);
+            listaHistorico.Insert(0, "Resultado: " + resultado + " - data: " + data);
             return resultado;
         }
 
         public int Multiplicar(int val1, int val2)
         {
             int resultado = val1 * val2;
-            listaHistorico.Insert(0, "Resultado: " + resultado);
+            listaHistorico.Insert(0, "Resultado: " + resultado + " - data: " + data);
             return resultado;
         }
 
         public int Dividir(int val1, int val2)
         {
             int resultado = val1 / val2;
-            listaHistorico.Insert(0, "Resultado: " + resultado);
+            listaHistorico.Insert(0, "Resultado: " + resultado + " - data: " + data);
             return resultado;
         }
 
