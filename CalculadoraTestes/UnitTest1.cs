@@ -30,8 +30,8 @@ namespace CalculadoraTestes
         }
 
         [Theory]
-        [InlineData(6, 2, 3)]
-        [InlineData(5, 5, 1)]
+        [InlineData(6, 2, 12)]
+        [InlineData(5, 5, 25)]
         public void TesteMultiplicar(int val1, int val2, int resultado)
         {
             Calculadora calc = new Calculadora();
@@ -42,8 +42,8 @@ namespace CalculadoraTestes
         }
 
         [Theory]
-        [InlineData(1, 2, 2)]
-        [InlineData(4, 5, 20)]
+        [InlineData(2, 2, 1)]
+        [InlineData(6, 3, 2)]
         public void TesteDividir(int val1, int val2, int resultado)
         {
             Calculadora calc = new Calculadora();

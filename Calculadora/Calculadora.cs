@@ -5,7 +5,7 @@ namespace Calculadoras
 {
     public class Calculadora
     {
-        private List<strin> listaHistorico;
+        private List<string> listaHistorico;
 
         public Calculadora()
         {
@@ -42,8 +42,11 @@ namespace Calculadoras
 
         public List<string> Historico
         {
-            listaHistorico.RemoveRange(3, listaHistorico.Count - 3);
-            return listaHistorico;
+            get 
+            {
+                listaHistorico.RemoveRange(3, listaHistorico.Count - 3);
+                return listaHistorico;
+            }
         }
     }
 }
